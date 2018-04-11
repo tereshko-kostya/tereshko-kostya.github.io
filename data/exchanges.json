@@ -1,0 +1,26 @@
+{
+	"exchanges":[
+		{"name":"Kucoin","link":""},
+		{"name":"Okex","link":""},
+		{"name":"Cex.io","link":""},
+		{"name":"xBTCe","link":""},
+		{"name":"Lykke","link":""},
+		{"name":"Livecoin","link":""},
+		{"name":"YoBit","link":""},
+		{"name":"Bittrex","link":""},
+		{"name":"Whaleclub","link":""},
+		{"name":"Cryptopia","link":""},
+		{"name":"Binance","link":""},
+		{"name":"Uphold","link":""},
+		{"name":"Wex.nz","link":""},
+		{"name":"Gate.io","link":""},
+		{"name":"Exmo","link":"https://api.exmo.com/v1/ticker/"},
+		{"name":"Gemini","link":""},
+		{"name":"Bitbay","link":""},
+		{"name":"Coinbase","link":""},
+		{"name":"Hitbtc","link":""},
+		{"name":"Huobi","link":""},
+		{"name":"Poloniex","link":""},
+		{"name":"Quoine","link":""}
+	]
+}
