@@ -4,7 +4,7 @@ var ExmoObj;
 var MaximumCryptoList;
 
 $(document).ready(function(){
-	cmc('https://api.coinmarketcap.com/v1/ticker/?convert=USD&limit=100', 'usd');
+	cmc('https://api.coinmarketcap.com/v1/ticker/?convert=USD&limit=100', 'USD');
 
 	$.getJSON("../data/exchanges.json",function(json){
 		exchanges = json.exchanges;
@@ -30,7 +30,7 @@ function cmc(api, currency){
 		success: function(data){
 			$('#main-table tbody').empty();
 			data.forEach(function(currentValue, index, data){
-				$('#main-table tbody').append('<tr><td>'+(index+1)+'</td><td><a href="">'+currentValue.name+'</a></td><td>'+currentValue.symbol+'</td><td>'+currentValue["price_"+currency.toLowerCase()+""]+'</td></tr>');
+				$('#main-table tbody').append('<tr><td>'+(index+1)+'</td><td><a href="">'+currentValue.name+'</a></td><td>'+currentValue.symbol+'</td><td>'+currentValue["price_"+currency.toLowerCase()]+'  '+currency+'</td><td>'+currentValue.price_btc+' BTC</td><td>'+currentValue["percent_change_1h"]+' %</td></tr>');
 				//result[index] = {name:""+currentValue.name+"", symbol:""+currentValue.symbol+""}
 			});
 		},
